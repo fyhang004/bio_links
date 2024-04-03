@@ -35,6 +35,7 @@ a {
     justify-content: center;
     height: 100vh;
     padding: 0 4%;
+    position: relative;
 }
 
 .bio {
@@ -113,4 +114,17 @@ a {
     font-size: 2.125rem;
     height: 2.125rem;
     color: var(--text-text-link-orange);
+}
+
+.decoration1 {
+    position: absolute;
+    left: 2rem; 
+    top: 1rem; 
+}
+
+.decoration2 {
+    position: absolute;
+    right: 6rem; 
+    bottom: 3rem; 
+    transform: rotate(60deg);
 }
