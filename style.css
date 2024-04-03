@@ -1,0 +1,116 @@
+:root {
+    --text-text-link-orange: #FFB531;
+    --text-text-link-blue: #16455F;
+    --text-text-light: #404144;
+    --surface-surface-secondary: #F9F8F2;
+}
+
+body {
+    background-color: var(--surface-surface-secondary);
+}
+
+h1 {
+    color: var(--text-text-link-blue); 
+    font-size: 32px; 
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    color: var(--text-text-light); 
+    font-size: 16px;
+    font-family: "Montserrat"; 
+    font-weight: 400; 
+    line-height: 24px; 
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 4%;
+}
+
+.bio {
+    width: 100%; 
+    height: 100%; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem; 
+    display: flex;
+}
+
+.bio .img {
+    width: 300px;
+    height: 300px; 
+    overflow: hidden; 
+    border-radius: 50%;
+}
+
+.bio .img img {
+    width: 100%;
+    transform: scale(180%);
+    margin-top: 40px;
+    margin-left: -30px;
+}
+
+.bio .description {
+    text-align: center; 
+}
+
+.links {
+    width: 100%; 
+    height: 100%; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem; 
+    display: flex
+}
+.link ul {
+    gap: 2rem; 
+    display: flex;
+    flex-direction: column;
+}
+
+.link ul li {
+    width: 25rem;
+    padding: .5rem;
+    list-style: none;
+    text-align: center;
+    border-radius: 3.5rem;
+    border: 2px solid var(--text-text-link-orange);
+    color: var(--text-text-link-orange);
+
+    font-family: "Racing Sans One";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.link ul li:hover {
+    background-color: var(--text-text-link-orange);
+    color: var(--text-text-link-blue);
+}
+
+
+.icon a {
+    display: inline-block;
+    vertical-align: middle;
+    height: 2.125rem;
+}
+
+
+.icon a span {
+    font-size: 2.125rem;
+    height: 2.125rem;
+    color: var(--text-text-link-orange);
+}
