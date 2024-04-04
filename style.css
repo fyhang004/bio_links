@@ -7,6 +7,8 @@
 
 body {
     background-color: var(--surface-surface-secondary);
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -80,7 +82,8 @@ a {
 }
 
 .link {
-    width: 25rem; 
+    /* width: 25rem;  */
+    width: 100%; 
 }
 
 .link ul {
@@ -133,6 +136,10 @@ a {
     color: var(--text-text-link-orange);
 }
 
+.icon a span:hover {
+    color: var(--text-text-link-blue);
+}
+
 .decoration1 {
     position: absolute;
     left: 2rem; 
@@ -148,6 +155,14 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+    .container {
+        padding-top: 3rem;
+    }
+
+    .bio {
+        height: fit-content; 
+    }
+
     .bio .img {
         width: 200px;
         height: 200px; 
@@ -156,6 +171,7 @@ a {
     .container {
         display: flex;
         flex-direction: column;
+
     }
     .decoration1 {
         left: 2rem; 
@@ -181,12 +197,12 @@ a {
     }
 
     .bio .img {
-        width: 200px;
-        height: 200px; 
+        width: 180px;
+        height: 180px; 
     }
 
     .link { 
-        max-width: 15rem;
+        /* max-width: 15rem; */
     }
     
     .link ul {
