@@ -153,6 +153,48 @@ a {
     bottom: 3rem; 
     transform: rotate(60deg);
 }
+.portfolio {
+    position: relative;
+}
+
+#construction {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    width: 100px;
+    height: 100px; 
+    background-color: var(--text-text-link-blue);
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    border: var(--text-text-link-orange) 3px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+#construction::after {
+    width: 100px;
+    height: 50px; 
+    content:"";
+    bottom: 7px; /* Adjusted position after rotation */
+    left: 18px; /* Adjusted position after rotation */
+    transform: rotate(-45deg); /* Rotate it back */
+    position: absolute;
+    background-color: #d1c2d1;
+    mix-blend-mode: multiply;
+    border-radius: 0 0 100px 100px;
+    border: #ffffff 1px solid;
+    filter: blur(1px);
+}
+#construction p {
+    color: var(--surface-surface-secondary);
+    font-weight: 600;
+    line-height: normal;
+    transform: rotate(-15deg);
+    z-index: 1;
+}
 
 @media only screen and (max-width: 768px) {
     .container {
@@ -184,6 +226,20 @@ a {
         right: .5rem; 
         bottom: .5rem; 
         transform:scale(60%);
+    }
+
+    #construction {
+        width: 80px;
+        height: 80px; 
+    }
+    #construction::after {
+        width: 80px;
+        height: 40px; 
+        bottom: 6px; /* Adjusted position after rotation */
+        left: 14px; /* Adjusted position after rotation */
+    }
+    #construction p {
+        font-size: 12px;
     }
   }
 
