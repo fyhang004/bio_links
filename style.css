@@ -120,6 +120,8 @@ a {
     padding: 0 auto;
     vertical-align: middle;
     text-align: center;
+    gap: 1rem;
+    display: flex;
 }
 
 .icon div{
